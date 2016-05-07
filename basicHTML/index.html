@@ -78,7 +78,7 @@
       A style sheet language used for describing the presentation of a document written in a markup language.
       </dd>
     </dl>
-
+    <h3>Contact Form</h3>
     <form>
       <fieldset>
         <dl>
@@ -111,10 +111,140 @@
         <input type="reset" value="Clear" />
       </fieldset>
     </form>
-
-    <form>
-      <label for="search">Search for:</label>
-      <input type="">
+    <h3>Search Form</h3>
+    <form action="" method="get">
+      <fieldset>
+        <label for="search">Search for:</label>
+        <input type="search" name="query" id="query" />
+        <label><input type="radio" name="filter" value="tv" />TV</label>
+        <label><input type="radio" name="filter" value="movies" />Movies</label>
+        <label><input type="radio" name="filter" value="music" />Music</label>
+        <input type="button" value="Search" />
+      </fieldset>
     </form>
+    <h3>Review Form</h3>
+    <form action="" method="post">
+      <fieldset>
+        <dl>
+          <dt><label for="title">Movie</label></dt>
+          <dd><select name="title" id="title">
+            <option value="Looper">Looper</option>
+            <option value="Frozen">Frozen</option>
+            <option value="Tommy Boy">Tommy Boy</option>
+          </select></dd>
+          <dt><label for="rating">Rating</label></dt>
+          <dd><input id="rating" name="rating" type="range" min="1" max="5" step="1" /></dd>
+          <dt><label><input type="checkbox" name="favorites" value="favorites" checked />Add to my favorites</label></dt>
+          <input type="submit" value="Rate movie" />
+      </fieldset>
+    </form>
+
+    <h3>Table 1</h3>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Product</th>
+          <th scope="col">Quantity</th>
+          <th scope="col">Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Apple</td>
+          <td>34</td>
+          <td>$3.99/lb</td>
+        </tr>
+        <tr>
+          <td>Banana</td>
+          <td>116</td>
+          <td>$1.69/lb</td>
+        </tr>
+        <tr>
+          <td>Carrot</td>
+          <td>42</td>
+          <td>$2.49/lb</td>
+        </tr>
+        <tr>
+          <td>Kiwi</td>
+          <td>18</td>
+          <td>$0.69 ea.</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>Table 2</h3>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Major</th>
+          <th scope="col">GPA</th>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Chris Lee</th>
+          <td>Supply Chain Management</td>
+          <td>3.7</td>
+        </tr>
+        <tr>
+          <th scope="row">Shane Riley</th>
+          <td>Photojournalism</td>
+          <td>3.8</td>
+        </tr>
+        <tr>
+          <th scope="row">Kevin Wang</th>
+          <td>Computer Science</td>
+          <td>4.0</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>Table 3</h3>
+    <table>
+      <thead>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Price</th>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row" rowspan="3">Red</th>
+          <td>Meiomi Pinot Noir</td>
+          <td>$17.99</td>
+        </tr>
+        <tr>
+          <td>Radius Cabernet</td>
+          <td>$9.99</td>
+        </tr>
+        <tr>
+          <td>Apothic Red</td>
+          <td>$7.97</td>
+        </tr>
+        <tr>
+          <th scope="row" rowspan="3">White</th>
+          <td>Cloud Break Chardonnay</td>
+          <td>$8.99</td>
+        </tr>
+        <tr>
+          <td>Kendall Jackson Chardonnay</td>
+          <td>$9.97</td>
+        </tr>
+        <tr>
+          <td>Kim Crawford Sauvignon Blanc</td>
+          <td>$9.97</td>
+        </tr>
+        <tr>
+          <th scope="row" rowspan="3">Sake</th>
+          <td>Gekkeikan Sake</td>
+          <td>$9.99</td>
+        </tr>
+        <tr>
+          <td>Mura Mura Mountain Sake</td>
+          <td>$15.99</td>
+        </tr>
+        <tr>
+          <td>TY KU Sake Junmai Ginjo Black</td>
+          <td>$21.99</td>
+        </tr>
+      </tbody>
+    </table>
   </body>
 </html>
