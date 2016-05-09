@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;  
+}
+
+body {
+  background: #cccccc;
+}
+
+section {
+  background: #fff;
+  max-width: 1200px;
+  margin: 0 auto;
+  /*overflow: hidden; works to clear floats but may cut off content
+   * that is positioned outside of the element*/
+}
+
+.left-col {
+  background: #fff;
+  width: 15%;
+  float: left;
+  overflow: hidden;
+}
+
+article {
+  background: #ffffcc;
+  width: 70%;
+  float: left;
+  padding-right: 30px;
+}
+
+aside {
+  background: #ccffcc;
+  overflow: hidden;
+}
+
+footer {
+  background: #ebecff;
+  clear: both;
+}
