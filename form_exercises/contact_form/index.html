@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <style>
+      form label, form input {
+        display: inline-block;
+      }
+    </style>
+    <title>Contact Form</title>
+  </head>
+  <body>
+    <form action="" method="post">
+      <fieldset>
+        <dl>
+          <dt>
+            <label for="first_name">First Name:</label>
+          </dt>
+          <dd>
+            <input id="first_name" type="text" name="first_name">
+          </dd>
+          <dt>
+            <label for="last_name">Last Name:</label>
+          </dt>
+          <dd>
+            <input id="last_name" type="text" name="last_name">
+          </dd>
+          <dt>
+            <label for="email" inputmode="email">Email:</label>
+          </dt>
+          <dd>
+            <input id="email" type="email" name="email" autocomplete="off" autocorrect="off" autocapitalize="off">
+          </dd>
+          <dt>
+            <label for="tel">Telephone Number:</label>
+          </dt>
+          <dd>
+          <input id="phone" type="tel" name="phone">
+          </dd>
+          <dt>
+            <label for="phone-type">Phone type:</label>
+          </dt>
+          <dd>
+            <select id="phone-type" name="phone-type">
+              <option value="home" selected>Home</option>
+              <option value="business">Business</option>
+              <option value="mobile">Mobile</option>
+            </select>
+          </dd>
+        </dl>
+        <input type="submit" value="Send">
+      </fieldset>
+    </form>
+  </html>
+</body>
