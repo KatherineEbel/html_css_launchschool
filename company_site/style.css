@@ -1,0 +1,200 @@
+@import url("whitespace-reset.css");
+
+body {
+  background: #252840 url("images/bg_body.gif");
+  font: 20px "Avenir", Helvetica, Arial, sans-serif;
+  text-align: center;
+  padding: 135px 0 0 0;
+  color: #45494D;
+}
+
+header, main, footer {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+main {
+  background-color: #fff;
+  padding: 100px 0 0 0;
+}
+
+article {
+  padding-bottom: 100px;
+}
+
+article p {
+  padding: 0 110px;
+}
+
+h1 {
+  margin-bottom: 115px;
+}
+
+h3 {
+  padding-bottom: 20px;
+  color: #3E98B2;
+  font-size: 24px;
+}
+
+h2 {
+  padding: 0 0 40px 0;
+  font-weight: 600;
+  font-size: 36px;
+}
+
+h2:before,
+h2:after {
+  display: inline-block;
+  padding: 0 24px;
+  font-size: 22px;
+  vertical-align: 5px;
+  content: "\2022";
+}
+
+.column {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+nav {
+  padding-bottom: 45px;
+  font-size: 26px;
+  text-transform: uppercase;
+}
+
+nav li {
+  display: inline;
+  padding: 0 42px;
+}
+
+nav a {
+ text-decoration: none;
+ color: #cacaca;
+ font-size: 26px;
+} 
+
+nav a.active {
+  font-weight: bold;
+  color: #6db9ff;
+}
+
+footer {
+  background: #E7E7E7;
+  padding: 80px 0;
+  color: #b2b2b2;
+}
+
+footer p {
+  padding-bottom: 50px;
+}
+
+
+footer li {
+  display: inline;
+  text-decoration: none;
+  padding: 0 62px;
+}
+
+.social::before {
+  display: inline-block;
+  height: 46px;
+  width: 46px;
+  vertical-align: center;
+  background: transparent url("images/icons_social-media.png") 0 0 no-repeat;
+  content: "";
+}
+
+.facebook::before {
+  background-position: 0 -46px;
+}
+
+.email::before {
+  background-position: 0 -92px%;
+}
+
+.instagram::before {
+  background-position: 0 100%;
+}
+
+
+/* project page specific css */
+
+figure ~ h3 {
+  color: #3e59b2;
+}
+
+#projects figure {
+  padding-bottom: 55px;
+}
+
+#projects figure img {
+  display: block;
+}
+
+/* team page specific css */
+
+#team p {
+  padding: 0 120px 120px 120px;
+}
+
+#team ul {
+  padding-bottom: 225px;
+}
+
+#team li {
+  display: inline-block;
+  padding: 0 30px;
+  font-size: 24px;
+}
+
+#team li img {
+  display: block;
+  margin-bottom: 25px;
+}
+
+#team li a {
+  text-decoration: none;
+  color: #3e59b2;
+}
+/* team detail specific css */
+
+section {
+  margin: 0 auto;
+  position: relative;
+  height: 566px;
+  width: 830px;
+  background: #fff;
+}
+
+section figure img {
+  float: left;
+  width: 97px;
+  margin-left: 50px;
+  padding-top: 120px;
+}
+
+section h3 {
+  font-weight: normal;
+  color: #3e59b2;
+  float: left;
+  padding-top: 135px;
+}
+
+section p {
+  clear: left;
+  width: 680px;
+  text-align: left;
+  margin-left: 90px;
+  padding: 40px 0;
+}
+
+.team-detail {
+  background: #b2b2b2;
+  padding-bottom: 145px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
