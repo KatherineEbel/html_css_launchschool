@@ -2,44 +2,53 @@
 
 body {
   background: #252840 url("images/bg_body.gif");
-  font: 20px "Avenir", Helvetica, Arial, sans-serif;
+  font: normal 20px "Avenir", Helvetica, Arial, sans-serif;
   text-align: center;
-  padding: 135px 0 0 0;
+  padding: 75px 0 0 0;
   color: #45494D;
 }
 
-header, main, footer {
+a {
+  text-decoration: none;
+  color: #3e59b2;
+}
+
+.column {
+  max-width: 1000px;
   margin: 0 auto;
-  width: 1200px;
 }
 
 main {
   background-color: #fff;
-  padding: 100px 0 0 0;
+  padding: 75px 0 0 0;
 }
 
 article {
-  padding-bottom: 100px;
+  padding: 0 110px 100px 110px;
 }
 
-article p {
-  padding: 0 110px;
-}
-
-h1 {
+header h1 {
   margin-bottom: 115px;
 }
 
+header h1 a {
+  display: inline-block;
+  width: 298px;
+  height: 243px;
+  margin: 0 auto 50px auto;
+  text-indent: -9999px;
+  background: transparent url("images/logo.png") 0 0 no-repeat;
+}
+
 h3 {
-  padding-bottom: 20px;
   color: #3E98B2;
   font-size: 24px;
 }
 
 h2 {
-  padding: 0 0 40px 0;
   font-weight: 600;
   font-size: 36px;
+  margin-bottom: 15px;
 }
 
 h2:before,
@@ -49,11 +58,6 @@ h2:after {
   font-size: 22px;
   vertical-align: 5px;
   content: "\2022";
-}
-
-.column {
-  width: 1000px;
-  margin: 0 auto;
 }
 
 nav {
@@ -85,7 +89,7 @@ footer {
 }
 
 footer p {
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
 
 
@@ -119,26 +123,42 @@ footer li {
 
 /* project page specific css */
 
-figure ~ h3 {
+#projects figure {
   color: #3e59b2;
+  padding: 0 0 55px 0;
 }
 
-#projects figure {
-  padding-bottom: 55px;
+#projects article {
+  padding-bottom: 50px;
+}
+
+#projects article + article {
+  padding-top: 60px;
+  border-top: 1px solid #ccc;
+}
+
+#projects article p {
+  padding: 0 110px;
+  margin: 0;
 }
 
 #projects figure img {
   display: block;
+  width: 100%;
 }
 
 /* team page specific css */
 
+#team article {
+  padding: 0 0 100px 0;
+}
+
 #team p {
-  padding: 0 120px 120px 120px;
+  padding: 0 110px 100px 110px;
 }
 
 #team ul {
-  padding-bottom: 225px;
+  padding: 0;
 }
 
 #team li {
@@ -149,7 +169,7 @@ figure ~ h3 {
 
 #team li img {
   display: block;
-  margin-bottom: 25px;
+  margin: 0 0 20px 0;
 }
 
 #team li a {
@@ -198,3 +218,124 @@ section p {
   top: 25px;
   right: 25px;
 }
+
+@media (max-width: 875px) {
+  #team li {
+    width: 48%;
+    padding: 0 0 30px 0;
+  }  
+
+  #team li img {
+    margin: 0 auto 25px auto;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 65px;
+  }
+
+  header h1 a {
+    width: 223px;
+    height: 182px;
+    margin-bottom: 30px;
+    background-size: cover;
+  }
+
+  nav {
+    padding-bottom: 0;
+  }
+
+  main {
+    margin: 0 auto;
+    padding-top: 40px;
+  }
+  
+  article {
+    padding: 0 40px 50px 40px;
+  }
+
+  article p {
+    text-align: justify;
+  }
+
+  footer {
+    padding: 35px 0;
+  }
+
+  footer li  {
+    padding: 0 32px; 
+  }
+
+  #projects article p {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding-top: 0;
+    font-size: 16px;
+  }
+
+  header {
+    padding: 20px 15px;
+  }
+
+  header h1 {
+    float: left;
+    margin-top: 5px;
+  }
+
+  header h1 a {
+    width: auto;
+    height: 40px;
+    padding: 50px 0 0 55px;
+    text-indent: 10px;
+    font-size: 20px; color: #fff;
+    background-position: -20px 40px;
+    background-size: 98px auto;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  h2::before,
+  h2::after {
+    vertical-align: 0;
+  }
+
+  #team p {
+    padding: 0 30px 40px 30px;
+  }
+
+  nav {
+    text-align: right;
+  }
+
+  nav a {
+    font-size: 16px;
+  }
+
+  nav ul {
+  }
+
+  nav li {
+    display: block;
+    padding: 5px 0;
+  }
+
+  footer {
+    padding: 20px 0;
+  }
+
+  footer p {
+    padding: 20px 20px;
+  }
+
+  footer li {
+    padding: 0 18px;
+  }
+}
+
