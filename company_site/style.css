@@ -28,16 +28,16 @@ article {
 }
 
 header h1 {
-  margin-bottom: 115px;
-}
-
-header h1 a {
   display: inline-block;
   width: 298px;
   height: 243px;
   margin: 0 auto 50px auto;
   text-indent: -9999px;
   background: transparent url("images/logo.png") 0 0 no-repeat;
+}
+
+header h1 a {
+  color: #fff;
 }
 
 h3 {
@@ -235,7 +235,7 @@ section p {
     padding-top: 65px;
   }
 
-  header h1 a {
+  header h1 {
     width: 223px;
     height: 182px;
     margin-bottom: 30px;
@@ -244,6 +244,10 @@ section p {
 
   nav {
     padding-bottom: 20px;
+  }
+
+  nav li {
+    padding: 0 34px;
   }
 
   main {
@@ -273,27 +277,24 @@ section p {
 }
 
 @media (max-width: 480px) {
+  
   body {
     padding-top: 0;
     font-size: 16px;
   }
 
   header {
-    padding: 20px 15px;
+    padding: 0 10px;
   }
 
   header h1 {
     float: left;
-    margin-top: 5px;
-  }
-
-  header h1 a {
     width: auto;
     height: 40px;
-    padding: 50px 0 0 55px;
+    padding: 42px 0 0 55px;
     text-indent: 10px;
     font-size: 20px; color: #fff;
-    background-position: -20px 40px;
+    background-position: -22px 31px;
     background-size: 98px auto;
   }
 
@@ -311,19 +312,23 @@ section p {
   }
 
   nav {
+    margin-top: 20px;
+    padding-bottom: 20px;
     text-align: right;
+    overflow: hidden;
+  }
+
+  nav li {
+    padding-right: 20px;
+    display: block;
   }
 
   nav a {
     font-size: 16px;
   }
 
-  nav ul {
-  }
-
-  nav li {
-    display: block;
-    padding: 5px 0;
+  main {
+    clear: both;
   }
 
   footer {
@@ -337,4 +342,5 @@ section p {
   footer li {
     padding: 0 18px;
   }
-}
+  
+} 
