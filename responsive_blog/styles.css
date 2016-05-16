@@ -1,0 +1,65 @@
+@import url("whitespace-reset.css");
+
+body {
+  font: 20px Helvetica, Arial, sans-serif;
+  background: #3d3d3d;
+}
+
+header {
+  padding-top: 100px;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 2.5em;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 90px;
+  margin-bottom: 50px;
+  background: transparent url("images/logo.png") 90% 100% no-repeat;
+  background-size: 90% auto;
+}
+
+header img {
+  display: block;
+  margin: 30px auto 100px auto;
+  width: 75%;
+}
+
+header a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+nav {
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav a.active {
+  color: #50c3af;
+}
+
+nav a:hover {
+  color: #f5dc39;
+}
+
+nav li {
+  float: left;
+  width: 40%;
+  margin: 0 0 20px 30px;
+}
+
+/* main styles */
+
+main {
+  clear: left;
+  padding: 90px;
+  background: #fff;
+  color: #45494d;
+}
